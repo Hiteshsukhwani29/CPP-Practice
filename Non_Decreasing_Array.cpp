@@ -1,3 +1,10 @@
+
+// You are given an array A consisting of N positive integers. Your task is to find an array B of length N satisfying the following conditions:
+
+// B[i] > 0 for all 1 <= i <= N
+// B[i] <= B[i+1], for all 1 <= i < N
+// B[i] is divisible by A[i] for all 1 <= i <= N
+
 #include<bits/stdc++.h>
 #define ll long long int
 using namespace std;
