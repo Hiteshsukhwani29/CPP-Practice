@@ -58,6 +58,18 @@ public:
             temp->next = n;
         }
     }
+    int searchlinear(int data){
+        Node* temp = head;
+        int i=0;
+        while(temp!=NULL){
+            if(temp->data==data){
+                return i;
+            }
+            i++;
+            temp = temp->next;
+        }
+        return -1;
+    }
     Node* nodehead(){
         return head;
     }
