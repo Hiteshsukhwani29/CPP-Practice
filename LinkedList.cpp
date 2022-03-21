@@ -19,4 +19,7 @@ int main(){
         h = h->next;
     }
 
+
+    cout<<"\nelement found at index : "<<l.searchlinear(2);
+
 }
