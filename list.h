@@ -43,6 +43,21 @@ public:
             tail = n;
         }
     }
+    void insertbw(int data, int p){
+        if(head==NULL){
+            pushfront(data);
+        }
+        else{
+            Node* temp = head;
+            while(p>=1){
+                temp = temp->next;
+                p--;
+            }
+            Node* n = new Node(data);
+            n->next = temp->next;
+            temp->next = n;
+        }
+    }
     Node* nodehead(){
         return head;
     }
