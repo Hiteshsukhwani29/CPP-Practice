@@ -1,12 +1,13 @@
-for(int i=0;i<r-1;i++){
-            for(int j=i+1;j<r;j++){
-                if(arr[i]>arr[j]){
-                    int temp=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
-                }
-            }
-        }
-        for(int i=0;i<r;i++){
-            std::cout<<arr[i]<<endl;
-        }
+
+class Solution{
+    public:
+    // arr : given array
+    // l : starting index of the array i.e 0
+    // r : ending index of the array i.e size-1
+    // k : find kth smallest element and return using this function
+    int kthSmallest(int arr[], int l, int r, int k) {
+        //code here
+        sort(arr,arr+r+1);
+        return arr[k-1];
+    }
+};
